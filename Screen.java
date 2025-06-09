@@ -223,7 +223,7 @@ public class Screen extends JFrame{
         Confirmar.setHorizontalAlignment(JLabel.CENTER);
         Confirmar.setBackground(new Color(255, 102, 0));
         Confirmar.setForeground(Color.white);
-        Confirmar.addActionListener(_ -> Confirmar());
+        Confirmar.addActionListener(i -> Confirmar());
         
         Excluir = new JButton("Excluir");
         Excluir.setBounds(180,490,140,30);
@@ -239,7 +239,7 @@ public class Screen extends JFrame{
         Limpar.setVerticalAlignment(JLabel.CENTER);
         Limpar.setHorizontalAlignment(JLabel.CENTER);
         Limpar.setBackground(Color.lightGray);
-        Limpar.addActionListener(_ -> Limpar());
+        Limpar.addActionListener(i -> Limpar());
 
 
         tela.add(Cpf);
