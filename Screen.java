@@ -27,6 +27,8 @@ public class Screen extends JFrame{
 
     public void Tela(){
             
+        //criação, estilização, posicionamento e funcionamento de cada elemento da tela (e a tela)
+
         tela = new JPanel();
         tela.setLayout(null);
 
@@ -241,6 +243,9 @@ public class Screen extends JFrame{
         Limpar.setBackground(Color.lightGray);
         Limpar.addActionListener(i -> Limpar());
 
+        //fim criação, estilização, posicionamento e funções
+
+        //adição de cada elemento na tela principal
 
         tela.add(Cpf);
         tela.add(Fornecedor);
@@ -286,13 +291,20 @@ public class Screen extends JFrame{
         tela.add(Complemento);
         tela.add(txtComplemento);
 
+        //fim adição dos elementos na tela
+
+        //definição de como a tela vai ser e como vai funcionar
 
         this.setContentPane(tela);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(1130,600);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
+
+        //fim definição
     }
+
+    //criação das funções dos botões de confirmar e limpar o formulário
 
     private void Confirmar(){
         JOptionPane.showMessageDialog(null, "Cadastro Simulado", "Cadastrar", JOptionPane.INFORMATION_MESSAGE);
@@ -309,4 +321,6 @@ public class Screen extends JFrame{
         campo.setText("");
         }
     }
+
+    //fim da criação das funções dos botões
 }
