@@ -318,7 +318,7 @@ public class Screen extends JFrame{
 
     private void Excluir(){
         for (JTextField campo : listaCampos) {
-        campo.setText("");
+        campo.setText(""); //para cada campo dentro de listaCampos o texto desse campo é alterado para vazio
         }
     }
 
