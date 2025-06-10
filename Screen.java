@@ -34,7 +34,7 @@ public class Screen extends JFrame{
 
         Titulo= new JLabel("Cadastro de Pessoa");
         Titulo.setBounds(30, 30, 600,50);
-        Titulo.setFont(new Font("Arial", Font.BOLD, 60));
+        Titulo.setFont(new Font("Arial", Font.PLAIN, 60));
         Titulo.setForeground(new Color(255, 102, 0));
             
         Tipo = new JLabel("Tipo");
